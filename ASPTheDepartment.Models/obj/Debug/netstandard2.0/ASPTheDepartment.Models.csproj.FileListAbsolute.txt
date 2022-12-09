@@ -1,4 +1,3 @@
-C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.csproj.AssemblyReference.cache
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.AssemblyInfoInputs.cache
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.AssemblyInfo.cs

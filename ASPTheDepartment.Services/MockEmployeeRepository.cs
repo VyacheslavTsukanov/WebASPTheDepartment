@@ -18,23 +18,23 @@ namespace ASPTheDepartment.Services
                 },
                 new Employee()
                 {
-                    Id = 1, Name = "Slava", Email = "slava@example.com", PhotoPath = "avatar.png", Department = Dept.IT
+                    Id = 1, Name = "Slava", Email = "slava@example.com", PhotoPath = "avatar2.png", Department = Dept.IT
                 },
                 new Employee()
                 {
-                    Id = 2, Name = "Slava", Email = "slava@example.com", PhotoPath = "avatar2.png", Department = Dept.IT
+                    Id = 2, Name = "Stiven", Email = "stiven@example.com", PhotoPath = "avatar2.png", Department = Dept.IT
                 },
                  new Employee()
                 {
-                    Id = 3, Name = "Shawn", Email = "Shawn@example.com", PhotoPath = "avatar.png", Department = Dept.Payroll
+                    Id = 3, Name = "Shawn", Email = "Shawn@example.com", PhotoPath = "avatar2.png", Department = Dept.Payroll
                 },
                 new Employee()
                 {
-                    Id = 4, Name = "Jenifer", Email = "Jenifer@example.com", PhotoPath = "avatar2.png", Department = Dept.HR
+                    Id = 4, Name = "Jenifer", Email = "Jenifer@example.com", PhotoPath = "avatar3.png", Department = Dept.HR
                 },
                  new Employee()
                 {
-                    Id = 0, Name = "Stem", Email = "Stem@example.com", Department = Dept.IT
+                    Id = 5, Name = "Stem", Email = "Stem@example.com", Department = Dept.IT
                 }
             };
         }
