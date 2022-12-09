@@ -76,7 +76,7 @@ body {
 
 
 
-
+/************************/
 
 .imageThumbnail {
     height: 150px;
@@ -134,3 +134,12 @@ body {
    */ background: linear-gradient(to right, rgba(19,6,120,1) 0%, rgba(23,8,158,1) 31%, rgba(36,12,245,1) 51%, rgba(94,76,255,1) 71%, rgba(156,145,255,1) 100%);
     color: #fff;
 }
+
+.cardTextLeftFloating {
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+
+/************************/
