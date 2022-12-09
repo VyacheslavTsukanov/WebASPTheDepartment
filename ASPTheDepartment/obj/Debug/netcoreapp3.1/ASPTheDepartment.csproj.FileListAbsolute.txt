@@ -358,3 +358,5 @@ C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\AS
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\bin\Debug\netcoreapp3.1\ASPTheDepartment.Models.pdb
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\bin\Debug\netcoreapp3.1\ASPTheDepartment.Services.pdb
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Details.cshtml.g.cs
+C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\NotFound.cshtml.g.cs
+C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Edit.cshtml.g.cs
