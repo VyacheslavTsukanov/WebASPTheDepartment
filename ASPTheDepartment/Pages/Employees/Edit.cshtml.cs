@@ -27,6 +27,10 @@ namespace ASPTheDepartment.Pages
         [BindProperty]
         public IFormFile Photo { get; set; }
 
+        [BindProperty]
+        public bool Notify { get; set; }
+        public string Massage { get; set; }
+
         public IActionResult OnGet(int id)
         {
             Employee = _employeeRepository.GetEmployee(id);
@@ -51,7 +55,22 @@ namespace ASPTheDepartment.Pages
             }
 
             Employee = _employeeRepository.Update(employee);
+            TempData["SeccessMessage"] = $"Update {Employee.Name} successful!";
             return RedirectToPage("Employees");
+        }
+
+        public void OnPostUpdateNotificationPreferences(int id)
+        {
+            if (Notify)
+            {
+                Massage = "Thank you for turning on the notification";
+            }
+            else
+            {
+                Massage = "Your have turned off email notifications";
+            }
+
+            Employee = _employeeRepository.GetEmployee(id);
         }
 
         private string ProcessUploadedFile()
