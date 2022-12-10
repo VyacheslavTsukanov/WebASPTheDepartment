@@ -47,5 +47,20 @@ namespace ASPTheDepartment.Services
         {
             return _employeeList.FirstOrDefault(x => x.Id == id);
         }
+
+        public Employee Update(Employee updateEmployee)
+        {
+            Employee employee = _employeeList.FirstOrDefault(x => x.Id == updateEmployee.Id);
+
+            if(employee != null)
+            {
+                employee.Name = updateEmployee.Name;
+                employee.Email = updateEmployee.Email;
+                employee.Department = updateEmployee.Department;
+                employee.PhotoPath = updateEmployee.PhotoPath;
+            }
+
+            return employee;
+        }
     }
 }
