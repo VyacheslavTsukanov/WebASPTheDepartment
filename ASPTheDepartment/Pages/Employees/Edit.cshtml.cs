@@ -22,6 +22,7 @@ namespace ASPTheDepartment.Pages
             _webHostEnvironment = webHostEnvironment;
         }
 
+        [BindProperty]
         public Employee Employee { get; set; }
 
         [BindProperty]
@@ -41,22 +42,28 @@ namespace ASPTheDepartment.Pages
             return Page();
         }
 
-        public IActionResult OnPost(Employee employee)
+        public IActionResult OnPost()
         {
-            if(Photo != null)
+            if (ModelState.IsValid)
             {
-                if(employee.PhotoPath != null)
+                if (Photo != null)
                 {
-                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "images", employee.PhotoPath);
-                    System.IO.File.Delete(filePath);
+                    if (Employee.PhotoPath != null)
+                    {
+                        string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "images", Employee.PhotoPath);
+                        System.IO.File.Delete(filePath);
+                    }
+
+                    Employee.PhotoPath = ProcessUploadedFile();
                 }
 
-                employee.PhotoPath = ProcessUploadedFile();
+                Employee = _employeeRepository.Update(Employee);
+                TempData["SeccessMessage"] = $"Update {Employee.Name} successful!";
+                return RedirectToPage("Employees");
             }
 
-            Employee = _employeeRepository.Update(employee);
-            TempData["SeccessMessage"] = $"Update {Employee.Name} successful!";
-            return RedirectToPage("Employees");
+            return Page();
+           
         }
 
         public void OnPostUpdateNotificationPreferences(int id)
