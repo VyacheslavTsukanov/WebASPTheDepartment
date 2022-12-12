@@ -32,9 +32,13 @@ namespace ASPTheDepartment.Pages
         public bool Notify { get; set; }
         public string Massage { get; set; }
 
-        public IActionResult OnGet(int id)
+        public IActionResult OnGet(int? id)
         {
-            Employee = _employeeRepository.GetEmployee(id);
+            if(id.HasValue)
+                Employee = _employeeRepository.GetEmployee(id.Value);
+            else
+                Employee = new Employee();
+            
 
             if (Employee == null)
                 return RedirectToPage("/NotFound");
@@ -57,8 +61,17 @@ namespace ASPTheDepartment.Pages
                     Employee.PhotoPath = ProcessUploadedFile();
                 }
 
-                Employee = _employeeRepository.Update(Employee);
-                TempData["SeccessMessage"] = $"Update {Employee.Name} successful!";
+                if(Employee.Id > 0)
+                {
+                    Employee = _employeeRepository.Update(Employee);
+                    TempData["SeccessMessage"] = $"Update {Employee.Name} successful!";
+                }
+                else
+                {
+                    Employee = _employeeRepository.Add(Employee);
+                    TempData["SeccessMessage"] = $"Adding {Employee.Name} successful!";
+                }
+                
                 return RedirectToPage("Employees");
             }
 

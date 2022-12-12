@@ -8,5 +8,6 @@ namespace ASPTheDepartment.Services
         IEnumerable<Employee> GetAllEmployees();
         Employee GetEmployee(int id);
         Employee Update(Employee updateEmployee);
+        Employee Add(Employee newEmployee);
     }
 }
