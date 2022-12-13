@@ -9,5 +9,6 @@ namespace ASPTheDepartment.Services
         Employee GetEmployee(int id);
         Employee Update(Employee updateEmployee);
         Employee Add(Employee newEmployee);
+        Employee Delete(int id);
     }
 }
