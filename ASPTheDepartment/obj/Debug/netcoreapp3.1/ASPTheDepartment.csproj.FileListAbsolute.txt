@@ -361,3 +361,4 @@ C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\AS
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Edit.cshtml.g.cs
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Employees\Delete.cshtml.g.cs
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_DisplayEmployeePartial.cshtml.g.cs
+C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\Components\HeadCount\Default.cshtml.g.cs
