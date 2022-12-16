@@ -21,3 +21,4 @@ C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\AS
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.RazorTargetAssemblyInfo.cache
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.dll
 C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.pdb
+C:\Users\vtsuk\OneDrive\Рабочий стол\Proj - C#\WebASPTheDepartment\ASPTheDepartment.Models\obj\Debug\netstandard2.0\ASPTheDepartment.Models.csproj.AssemblyReference.cache

@@ -26,7 +26,8 @@ namespace ASPTheDepartment
                 options.UseSqlServer(Configuration.GetConnectionString("EmployeeDBConection"));
             });
 
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            //services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
             services.AddRazorPages();
 
             services.Configure<RouteOptions>(opttions =>

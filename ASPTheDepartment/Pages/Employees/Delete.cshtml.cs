@@ -1,16 +1,21 @@
 using ASPTheDepartment.Models;
 using ASPTheDepartment.Services;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IO;
 
 namespace ASPTheDepartment.Pages.Employees
 {
     public class DeleteModel : PageModel
     {
         private readonly IEmployeeRepository _employeeRepository;
-        public DeleteModel(IEmployeeRepository employeeRepository)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public DeleteModel(IEmployeeRepository employeeRepository, IWebHostEnvironment webHostEnvironment)
         {
             _employeeRepository = employeeRepository;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [BindProperty]
@@ -30,6 +35,14 @@ namespace ASPTheDepartment.Pages.Employees
         public IActionResult OnPost()
         {
             Employee deletedEmployee = _employeeRepository.Delete(Employee.Id);
+
+            if (deletedEmployee.PhotoPath != null)
+            {
+                string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "images", Employee.PhotoPath);
+
+                if (Employee.PhotoPath != "images.png")
+                    System.IO.File.Delete(filePath);
+            }
 
             if (deletedEmployee == null)
                 return RedirectToPage("/NotFound");
